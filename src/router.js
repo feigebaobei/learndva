@@ -3,7 +3,7 @@ import { Router, Route, Switch } from 'dva/router';
 import IndexPage from './routes/IndexPage';
 
 import Products from './routes/Products'
-// import News from './routes/News'
+import News from './routes/News'
 
 function RouterConfig({ history }) {
   return (
@@ -11,6 +11,7 @@ function RouterConfig({ history }) {
       <Switch>
         <Route path="/" exact component={IndexPage} />
         <Route path="/products" exact component={Products} />
+        <Route path="/news" exact component={News} />
       </Switch>
     </Router>
   );
